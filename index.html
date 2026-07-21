@@ -539,99 +539,108 @@
           </div>
         </section>
 
-        <!-- Form and Payment Info -->
-        <section id="registration-form-section" class="register-layout">
-          <div class="register-form-container">
-            <h3 style="font-size:24px; color:var(--color-navy-dark); margin-bottom:20px;">Formulario de Registro</h3>
+        <!-- App Registration Promo Section -->
+        <section id="registration-form-section" class="app-promo-container">
+          <div class="app-promo-card">
+            <div class="app-promo-content">
+              <span class="app-promo-tag">Inscripciones Abiertas</span>
+              <h3 class="app-promo-title">Registro Exclusivo en la App SVNC</h3>
+              <p class="app-promo-text">Para garantizar la seguridad de sus datos, automatizar la confirmación de su pago (en bolívares o divisas) y emitir su credencial digital de acceso, todo el proceso de registro se realiza a través de la **App Oficial de la Sociedad Venezolana de Neurocirugía (SVNC)**.</p>
+              
+              <div class="app-promo-benefits">
+                <div class="benefit-item">
+                  <span class="benefit-icon">🎫</span>
+                  <div>
+                    <strong>Credencial Digital QR:</strong> Ingrese a los salones escaneando su credencial directamente desde la aplicación en su teléfono.
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-icon">💳</span>
+                  <div>
+                    <strong>Pago e Inscripción Integrada:</strong> Reporte transferencias, Pago Móvil o divisas y reciba aprobación inmediata en su perfil.
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-icon">🎓</span>
+                  <div>
+                    <strong>Certificado Digital Certificado:</strong> Descargue su diploma de asistencia avalado por la junta directiva al finalizar el evento.
+                  </div>
+                </div>
+              </div>
+
+              <div class="app-promo-actions">
+                <a href="https://app.svneurocirugia.org/registro" class="btn btn-primary app-btn">Acceder al Portal Web de la App</a>
+                <div class="app-download-badges">
+                  <a href="#" class="download-badge">
+                    <span class="badge-icon">🤖</span>
+                    <span class="badge-text">Descargar en <strong>Google Play</strong></span>
+                  </a>
+                  <a href="#" class="download-badge">
+                    <span class="badge-icon">🍏</span>
+                    <span class="badge-text">Descargar en <strong>App Store</strong></span>
+                  </a>
+                </div>
+              </div>
+            </div>
             
-            <!-- Success Screen Box (Shown via JS) -->
-            <div class="success-message" id="success-message-box">
-              <div style="font-size: 40px; margin-bottom: 12px;">✓</div>
-              <h4>¡Pre-registro Exitoso!</h4>
-              <p style="margin-bottom: 16px;">Hemos recibido sus datos y su referencia de pago correctamente.</p>
-              <div id="reg-summary-details" style="text-align: left; background: #fff; padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid #10b981; font-size: 13px; line-height: 1.6; margin-bottom: 20px;"></div>
-              <button class="btn btn-navy" id="register-another-btn">Registrar otro participante</button>
-            </div>
-
-            <div id="form-wrapper">
-              <form id="registration-form" class="register-form">
-                <div class="form-group">
-                  <label class="form-label" for="reg-name">Nombre Completo *</label>
-                  <input type="text" id="reg-name" required placeholder="Dr. / Dra. / Est. Nombre">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="reg-email">Correo Electrónico *</label>
-                  <input type="email" id="reg-email" required placeholder="nombre@correo.com">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="reg-phone">Teléfono de Contacto *</label>
-                  <input type="tel" id="reg-phone" required placeholder="+58 412-0000000">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="reg-institution">Institución / Hospital</label>
-                  <input type="text" id="reg-institution" placeholder="Hospital Clínico / UCV / Otro">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="reg-category">Categoría de Inscripción *</label>
-                  <select id="reg-category" required class="form-select">
-                    <option value="" disabled selected>Seleccione su categoría</option>
-                    <option value="especialista">Médico Especialista</option>
-                    <option value="residente">Médico Residente</option>
-                    <option value="estudiante">Estudiante de Medicina</option>
-                    <option value="virtual">Asistencia Virtual (Streaming)</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="reg-ref">Referencia de Pago *</label>
-                  <input type="text" id="reg-ref" required placeholder="Número de confirmación o transferencia">
-                </div>
-                <div class="form-group form-group-full">
-                  <label class="form-label" for="reg-notes">Requerimientos Especiales / Comentarios</label>
-                  <textarea id="reg-notes" class="form-textarea" placeholder="Indique si tiene requerimientos dietéticos o médicos especiales, o si adjunta detalles adicionales del pago."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary form-submit-btn">Formalizar Registro</button>
-              </form>
-            </div>
-          </div>
-
-          <div class="payment-info-container">
-            <h3>Información de Pago</h3>
-            <p style="margin-bottom: 24px; color: rgba(255,255,255,0.85); font-size:14px;">Realice el pago correspondiente al plan elegido y coloque el número de referencia en el formulario de la izquierda.</p>
-            
-            <div class="payment-method-box">
-              <div class="payment-method-title">
-                <span>🏦</span>
-                <span>Transferencia Bancaria Nacional</span>
-              </div>
-              <ul class="payment-details-list">
-                <li><strong>Banco:</strong> Banco Mercantil</li>
-                <li><strong>Cuenta Corriente:</strong> 0105-0000-00-0000000000</li>
-                <li><strong>Beneficiario:</strong> Soc. Venezolana de Neurocirugía</li>
-                <li><strong>RIF:</strong> J-00000000-0</li>
-              </ul>
-            </div>
-
-            <div class="payment-method-box">
-              <div class="payment-method-title">
-                <span>📱</span>
-                <span>Pago Móvil Interbancario</span>
-              </div>
-              <ul class="payment-details-list">
-                <li><strong>Banco:</strong> Banco Mercantil (0105)</li>
-                <li><strong>Teléfono:</strong> 0414-1234567</li>
-                <li><strong>Cédula / RIF:</strong> J-00000000-0</li>
-              </ul>
-            </div>
-
-            <div class="payment-method-box">
-              <div class="payment-method-title">
-                <span>💵</span>
-                <span>Zelle o Transferencia en USD</span>
-              </div>
-              <ul class="payment-details-list">
-                <li><strong>Correo de Pago:</strong> pagos@svneurocirugia.org</li>
-                <li><strong>Titular:</strong> Sociedad Venezolana de Neurocirugía</li>
-              </ul>
+            <div class="app-promo-visual">
+              <!-- Smartphone mockup with SVNC logo & QR code using SVG -->
+              <svg class="phone-mockup-svg" viewBox="0 0 320 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Phone body -->
+                <rect x="10" y="10" width="300" height="520" rx="36" fill="#0a1c33" stroke="#e2e8f0" stroke-width="6"/>
+                <!-- Screen -->
+                <rect x="20" y="30" width="280" height="480" rx="24" fill="#f8fafc"/>
+                <!-- Speaker/Camera Notch -->
+                <rect x="110" y="16" width="100" height="20" rx="10" fill="#0a1c33"/>
+                <!-- App header in phone -->
+                <rect x="20" y="30" width="280" height="60" rx="0" fill="#3f77bc"/>
+                <text x="160" y="65" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle">SVNC Portal Móvil</text>
+                
+                <!-- Ticket card -->
+                <rect x="40" y="110" width="240" height="340" rx="16" fill="#ffffff" filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.06))"/>
+                <rect x="40" y="110" width="240" height="8" rx="0" fill="#f2a97f"/>
+                
+                <!-- Inner logo or title -->
+                <text x="160" y="150" fill="#3f77bc" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="12" text-anchor="middle">CONGRESO XXII - REGISTRO</text>
+                
+                <!-- Mock QR Code in SVG -->
+                <g fill="#0a1c33">
+                  <!-- Outer frame of QR -->
+                  <rect x="100" y="180" width="120" height="120" rx="8" fill="#eef4fb"/>
+                  <rect x="110" y="190" width="30" height="30"/>
+                  <rect x="120" y="200" width="10" height="10" fill="#ffffff"/>
+                  
+                  <rect x="180" y="190" width="30" height="30"/>
+                  <rect x="190" y="200" width="10" height="10" fill="#ffffff"/>
+                  
+                  <rect x="110" y="260" width="30" height="30"/>
+                  <rect x="120" y="270" width="10" height="10" fill="#ffffff"/>
+                  
+                  <!-- Random QR blocks -->
+                  <rect x="150" y="190" width="10" height="20"/>
+                  <rect x="160" y="210" width="10" height="10"/>
+                  <rect x="170" y="190" width="10" height="10"/>
+                  <rect x="150" y="230" width="20" height="10"/>
+                  <rect x="180" y="230" width="10" height="20"/>
+                  <rect x="150" y="250" width="10" height="10"/>
+                  <rect x="170" y="250" width="20" height="20"/>
+                  <rect x="190" y="270" width="10" height="20"/>
+                  <rect x="150" y="270" width="10" height="10"/>
+                  <rect x="160" y="280" width="20" height="10"/>
+                </g>
+                
+                <!-- Scan message -->
+                <text x="160" y="335" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle">Escanee para ingresar a la App</text>
+                
+                <!-- Ticket details inside mockup -->
+                <rect x="60" y="360" width="200" height="1" fill="#e2e8f0"/>
+                
+                <text x="60" y="385" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="10">EVENTO:</text>
+                <text x="60" y="400" fill="#3f77bc" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="11">XXII Congreso SVNC</text>
+                
+                <text x="60" y="425" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="10">REGISTRO:</text>
+                <text x="60" y="440" fill="#f2a97f" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="11">Exclusivo en la App</text>
+              </svg>
             </div>
           </div>
         </section>
