@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XXII Congreso Venezolano de Neurocirugía - Hesperia WTC Valencia, 7-11 Septiembre 2026. Organizado por la Sociedad Venezolana de Neurocirugía.">
+  <title>XXII Congreso Venezolano de Neurocirugía</title>
+  
+
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Sticky Header with Logo & Tabs -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo-link" id="nav-brand-logo">
+        <img src="./Sociedad Venezolana de Neurocirugía.png" alt="Sociedad Venezolana de Neurocirugía Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <button class="nav-tab active" data-section="info-section" id="tab-info">Info & Cronograma</button>
+        <button class="nav-tab" data-section="speakers-section" id="tab-speakers">Invitados</button>
+        <button class="nav-tab" data-section="hotel-section" id="tab-hotel">Hotel Sede</button>
+        <button class="nav-tab" data-section="registration-section" id="tab-register">Precios y Registro</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Areas (Tab Panels) -->
+  <main>
+
+    <!-- SECTION 1: INFO & CRONOGRAMA -->
+    <div id="info-section" class="page-section active">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="hero-xxii">XXII</p>
+            <h1>Congreso Venezolano de Neurocirugía</h1>
+            <p class="hero-serif">Innovación que transforma, ciencia que evoluciona.</p>
+            <p class="hero-lead">Únase al epicentro científico de la especialidad en Venezuela. Una semana de inmersión en cirugía robótica, inteligencia artificial aplicada a la toma de decisiones clínicas y técnicas avanzadas de mínima invasión.</p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" onclick="document.getElementById('tab-register').click()">Inscribirse al Congreso</button>
+              <button class="btn btn-outline-white btn-navy" onclick="document.getElementById('tab-speakers').click()">Ver Ponentes</button>
+            </div>
+          </div>
+          <div class="hero-graphic">
+            <!-- Stylized Innovational Neural Connection SVG (represents Map of Venezuela) -->
+            <svg class="network-svg" viewBox="0 0 800 800" role="img" aria-label="Mapa de innovación de Venezuela">
+              <path d="M164 306 220 285 286 308 350 284 412 316 470 300 543 331 603 320 648 351 627 396 586 418 552 443 512 468 463 492 415 519 358 541 318 523 271 504 232 466 194 437 165 397 150 353 164 306Z" fill="rgba(197, 160, 89, 0.04)" stroke="rgba(10, 28, 51, 0.08)" stroke-width="2"></path>
+              <g fill="none" stroke-linecap="round">
+                <path class="orb" d="M210 350 270 330 326 362 392 336 456 370 520 346 586 379" stroke="var(--color-teal)" stroke-width="2.5"></path>
+                <path class="orb" d="M192 430 262 410 323 444 383 418 444 450 512 429 588 449" stroke="var(--color-navy-light)" stroke-width="1.5"></path>
+                <path class="orb" d="M250 278 292 340 344 304 396 360 458 322 506 382 560 340" stroke="var(--color-gold)" stroke-width="2"></path>
+              </g>
+              <g fill="var(--color-teal)">
+                <circle cx="220" cy="285" r="9"></circle>
+                <circle cx="350" cy="284" r="9"></circle>
+                <circle cx="470" cy="300" r="9"></circle>
+                <circle cx="603" cy="320" r="9"></circle>
+                <circle cx="552" cy="443" r="9"></circle>
+              </g>
+              <g fill="var(--color-gold)">
+                <circle cx="286" cy="308" r="7"></circle>
+                <circle cx="412" cy="316" r="7"></circle>
+                <circle cx="543" cy="331" r="7"></circle>
+                <circle cx="271" cy="504" r="7"></circle>
+                <circle cx="463" cy="492" r="7"></circle>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Stats Banner -->
+      <section class="container">
+        <div class="stats-panel">
+          <div class="container stats-grid">
+            <div class="stat-card">
+              <span class="stat-label">Fecha del Evento</span>
+              <span class="stat-value">7 al 11 Sept. 2026</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Sede Oficial</span>
+              <span class="stat-value">Hesperia WTC Valencia</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Modalidad</span>
+              <span class="stat-value">Presencial / Virtual</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Aval Académico</span>
+              <span class="stat-value">Soc. Venezolana de Neurocirugía</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ejes Temáticos -->
+      <section class="container">
+        <div class="section-header">
+          <span class="section-tag">Contenido Académico</span>
+          <h2 class="section-title">Ejes Temáticos del Congreso</h2>
+          <p class="section-lead">El programa científico está diseñado para abordar los desafíos clínicos más urgentes y las fronteras de la tecnología moderna.</p>
+        </div>
+        
+        <div class="themes-grid">
+          <div class="theme-card">
+            <div class="theme-num">01</div>
+            <h3>La Neurocirugía del Futuro</h3>
+            <p>Implementación de robótica quirúrgica de alta precisión y el rol estratégico de la Inteligencia Artificial (IA) en la predicción y el diagnóstico clínico.</p>
+          </div>
+          <div class="theme-card">
+            <div class="theme-num">02</div>
+            <h3>Conversión Clínica y Mínima Invasión</h3>
+            <p>Profundización en técnicas endovasculares avanzadas, microcirugía reconstructiva y enfoques quirúrgicos mínimamente invasivos de base de cráneo.</p>
+          </div>
+          <div class="theme-card">
+            <div class="theme-num">03</div>
+            <h3>Desarrollo e Impacto Local</h3>
+            <p>Fomento de la colaboración científica en Venezuela, optimización de recursos hospitalarios y formación continua de jóvenes talentos de relevo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Cronograma (Schedule) -->
+      <section class="container schedule-section">
+        <div class="section-header">
+          <span class="section-tag">Agenda Académica</span>
+          <h2 class="section-title">Cronograma de Actividades</h2>
+          <p class="section-lead">Explore los temas, horarios y ponentes de cada jornada del congreso científico.</p>
+        </div>
+
+        <div class="schedule-tabs">
+          <button class="schedule-tab active" data-day="lunes">Lunes 07/09</button>
+          <button class="schedule-tab" data-day="martes">Martes 08/09</button>
+          <button class="schedule-tab" data-day="miercoles">Miércoles 09/09</button>
+          <button class="schedule-tab" data-day="jueves">Jueves 10/09</button>
+          <button class="schedule-tab" data-day="viernes">Viernes 11/09</button>
+        </div>
+
+        <div class="timeline">
+          <!-- LUNES -->
+          <div id="day-lunes" class="timeline-day-content active">
+            <div class="timeline-item">
+              <div class="timeline-time">08:00 AM</div>
+              <div>
+                <div class="timeline-talk">Acreditaciones y Registro de Participantes</div>
+                <div class="timeline-speaker">Comité Organizador</div>
+                <p class="timeline-desc">Entrega de credenciales, material de apoyo y bienvenida en la gran sala de convenciones del Hesperia WTC.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">09:30 AM</div>
+              <div>
+                <div class="timeline-talk">Ceremonia de Apertura e Inauguración del Congreso</div>
+                <div class="timeline-speaker">Dra. Ana Rodríguez (Presidenta de la SVNC)</div>
+                <p class="timeline-desc">Palabras oficiales de apertura, homenaje a los pioneros de la neurocirugía nacional y presentación del programa.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">11:00 AM</div>
+              <div>
+                <div class="timeline-talk">Robótica quirúrgica en el contexto latinoamericano: Desafíos y Realidad</div>
+                <div class="timeline-speaker">Dr. Robert Spetzler (Invitado Especial)</div>
+                <p class="timeline-desc">Conferencia inaugural sobre la integración costo-efectiva de sistemas robóticos y navegación digital en la región.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MARTES -->
+          <div id="day-martes" class="timeline-day-content">
+            <div class="timeline-item">
+              <div class="timeline-time">09:00 AM</div>
+              <div>
+                <div class="timeline-talk">Abordajes endovasculares avanzados para aneurismas complejos</div>
+                <div class="timeline-speaker">Dr. Miguel Herrera (Venezuela)</div>
+                <p class="timeline-desc">Estudios clínicos sobre la aplicación de técnicas flow-diverter en patologías vasculares complejas.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">10:30 AM</div>
+              <div>
+                <div class="timeline-talk">Uso de IA en el planeamiento quirúrgico preoperatorio</div>
+                <div class="timeline-speaker">Dra. Juana Silva (España)</div>
+                <p class="timeline-desc">Cómo los algoritmos predictivos reducen riesgos postoperatorios en resección de tumores cerebrales.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MIERCOLES -->
+          <div id="day-miercoles" class="timeline-day-content">
+            <div class="timeline-item">
+              <div class="timeline-time">09:00 AM</div>
+              <div>
+                <div class="timeline-talk">Estimulación Cerebral Profunda (DBS) en trastornos del movimiento</div>
+                <div class="timeline-speaker">Dr. Alim-Louis Benabid (Francia)</div>
+                <p class="timeline-desc">Revisión de resultados a largo plazo y optimización de coordenadas estereotáxicas para Parkinson.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">11:00 AM</div>
+              <div>
+                <div class="timeline-talk">Mínima invasión en patología de columna: Técnicas endoscópicas</div>
+                <div class="timeline-speaker">Dr. Carlos Mendoza (Venezuela)</div>
+                <p class="timeline-desc">Revisión crítica de la cirugía endoscópica vs abordaje abierto tradicional en hernias discales.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- JUEVES -->
+          <div id="day-jueves" class="timeline-day-content">
+            <div class="timeline-item">
+              <div class="timeline-time">09:00 AM</div>
+              <div>
+                <div class="timeline-talk">Neurocirugía pediátrica: Corrección endoscópica de craneosinostosis</div>
+                <div class="timeline-speaker">Dra. Laura Pérez (Venezuela)</div>
+                <p class="timeline-desc">Reporte de casos nacionales utilizando abordajes tempranos asistidos por endoscopia.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">02:00 PM</div>
+              <div>
+                <div class="timeline-talk">Simposio Práctico: Navegación intraoperatoria y ultrasonido</div>
+                <div class="timeline-speaker">Comité Docente SVNC</div>
+                <p class="timeline-desc">Taller interactivo en el área comercial con equipos de simulación avanzados para residentes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIERNES -->
+          <div id="day-viernes" class="timeline-day-content">
+            <div class="timeline-item">
+              <div class="timeline-time">09:00 AM</div>
+              <div>
+                <div class="timeline-talk">Conclusiones del Consenso Nacional de Neuro-oncología</div>
+                <div class="timeline-speaker">Panel de Expertos SVNC</div>
+                <p class="timeline-desc">Redacción final de la guía venezolana para el manejo multidisciplinar de gliomas de alto grado.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">11:30 AM</div>
+              <div>
+                <div class="timeline-talk">Premiación a Trabajos Científicos Libres y Cierre</div>
+                <div class="timeline-speaker">Comité Científico SVNC</div>
+                <p class="timeline-desc">Entrega del premio "Dr. Carlos Gil" al mejor trabajo científico del año y clausura oficial del evento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SECTION 2: INVITADOS / PONENTES -->
+    <div id="speakers-section" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Cuerpo Docente</span>
+          <h2 class="section-title">Invitados y Ponentes Destacados</h2>
+          <p class="section-lead">Conozca a los líderes de la neurocirugía nacional e internacional que guiarán las sesiones de debate y capacitación académica.</p>
+        </div>
+
+        <div class="speakers-grid">
+          <!-- Speaker 1 -->
+          <div class="speaker-card">
+            <div class="speaker-image-container">
+              <!-- Inline SVG Icon Avatar representing Doctor -->
+              <svg class="speaker-img-placeholder" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+              <span class="speaker-badge international">Internacional</span>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Dr. Robert Spetzler</h3>
+              <p class="speaker-title">Barrow Neurological Institute, USA</p>
+              <p class="speaker-bio">Reconocido mundialmente como una autoridad en neurocirugía vascular y base de cráneo, autor de la clasificación de Spetzler-Martin para malformaciones arteriovenosas cerebrales.</p>
+              <div class="speaker-talk">
+                <strong>Conferencia Magistral:</strong>
+                "Robótica quirúrgica en el contexto latinoamericano: Desafíos y Realidad"
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 2 -->
+          <div class="speaker-card">
+            <div class="speaker-image-container">
+              <svg class="speaker-img-placeholder" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+              <span class="speaker-badge international">Internacional</span>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Dra. Juana Silva</h3>
+              <p class="speaker-title">Hospital Clínico de Barcelona, España</p>
+              <p class="speaker-bio">Especialista en oncología quirúrgica y modelado predictivo computacional con más de 15 años de investigación clínica en el campo del glioblastoma multiforme.</p>
+              <div class="speaker-talk">
+                <strong>Conferencia Magistral:</strong>
+                "Uso de IA en el planeamiento quirúrgico preoperatorio y predicción de márgenes"
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 3 -->
+          <div class="speaker-card">
+            <div class="speaker-image-container">
+              <svg class="speaker-img-placeholder" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+              <span class="speaker-badge international">Internacional</span>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Dr. Alim-Louis Benabid</h3>
+              <p class="speaker-title">Université Grenoble Alpes, Francia</p>
+              <p class="speaker-bio">Físico y neurocirujano galardonado con el Premio Lasker por su desarrollo de la estimulación cerebral profunda (DBS) de alta frecuencia para la enfermedad de Parkinson.</p>
+              <div class="speaker-talk">
+                <strong>Conferencia Magistral:</strong>
+                "Estimulación Cerebral Profunda (DBS): Futuro terapéutico y modulación de circuitos"
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 4 -->
+          <div class="speaker-card">
+            <div class="speaker-image-container">
+              <svg class="speaker-img-placeholder" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+              <span class="speaker-badge national">Nacional</span>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Dra. Ana Rodríguez</h3>
+              <p class="speaker-title">Hospital Universitario de Caracas</p>
+              <p class="speaker-bio">Presidenta en ejercicio de la Sociedad Venezolana de Neurocirugía y líder de la iniciativa docente para el fortalecimiento académico de los postgrados nacionales.</p>
+              <div class="speaker-talk">
+                <strong>Conferencia Magistral:</strong>
+                "Lineamientos del Consenso Nacional sobre el tratamiento quirúrgico de tumores cerebrales"
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 5 -->
+          <div class="speaker-card">
+            <div class="speaker-image-container">
+              <svg class="speaker-img-placeholder" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+              <span class="speaker-badge national">Nacional</span>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Dr. Miguel Herrera</h3>
+              <p class="speaker-title">Hospital Militar Dr. Carlos Arvelo</p>
+              <p class="speaker-bio">Especialista senior en terapia endovascular y cirugía reconstructiva cerebrovascular, con amplia trayectoria en tratamiento percutáneo de MAVs.</p>
+              <div class="speaker-talk">
+                <strong>Conferencia Magistral:</strong>
+                "Abordajes endovasculares avanzados para aneurismas complejos por vía transradial"
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 6 -->
+          <div class="speaker-card">
+            <div class="speaker-image-container">
+              <svg class="speaker-img-placeholder" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+              <span class="speaker-badge national">Nacional</span>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Dra. Laura Pérez</h3>
+              <p class="speaker-title">Hospital Clínico Universitario, UCV</p>
+              <p class="speaker-bio">Pionera nacional en la aplicación de técnicas endoscópicas complejas y mínimamente invasivas en el tratamiento de tumores de hipófisis de gran volumen.</p>
+              <div class="speaker-talk">
+                <strong>Conferencia Magistral:</strong>
+                "Abordaje Transesfenoidal Endoscópico de base de cráneo: Experiencia Nacional"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: HOTEL SEDE -->
+    <div id="hotel-section" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Alojamiento y Sede</span>
+          <h2 class="section-title">Hotel Sede: Hesperia WTC Valencia</h2>
+          <p class="section-lead">Un entorno exclusivo que integra hotelería de cinco estrellas y el centro de convenciones más completo de Venezuela.</p>
+        </div>
+
+        <div class="hotel-layout">
+          <div class="hotel-info-block">
+            <h3>Centro de Convenciones World Trade Center</h3>
+            <p>El Hotel Hesperia WTC Valencia destaca por su arquitectura imponente y equipamientos modernos que garantizan el éxito académico y la comodidad de todos los asistentes del Congreso.</p>
+            
+            <div class="hotel-features">
+              <div class="hotel-feature">
+                <div class="hotel-feature-icon">1</div>
+                <div class="hotel-feature-text">
+                  <h4>Auditorios Equipados</h4>
+                  <p>Salas con sistemas acústicos optimizados y pantallas led de alta resolución para conferencias.</p>
+                </div>
+              </div>
+              <div class="hotel-feature">
+                <div class="hotel-feature-icon">2</div>
+                <div class="hotel-feature-text">
+                  <h4>Área de Exposición</h4>
+                  <p>Espacios confortables para los stands de la industria y la presentación de posters científicos.</p>
+                </div>
+              </div>
+              <div class="hotel-feature">
+                <div class="hotel-feature-icon">3</div>
+                <div class="hotel-feature-text">
+                  <h4>Conectividad Premium</h4>
+                  <p>Acceso a internet de alta velocidad de forma gratuita en todas las instalaciones del congreso.</p>
+                </div>
+              </div>
+              <div class="hotel-feature">
+                <div class="hotel-feature-icon">4</div>
+                <div class="hotel-feature-text">
+                  <h4>Ubicación Estratégica</h4>
+                  <p>Fácil acceso desde la autopista, situado en el polo comercial e industrial más dinámico del estado Carabobo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hotel-rates-card">
+              <h3>Tarifas Preferenciales de Alojamiento</h3>
+              <p class="lead">Mencione su asistencia al XXII Congreso de Neurocirugía al reservar para asegurar los siguientes costos:</p>
+              
+              <div class="rate-item">
+                <span class="rate-room">Habitación Deluxe Individual / Doble</span>
+                <span class="rate-price">$110 / noche</span>
+              </div>
+              <div class="rate-item">
+                <span class="rate-room">Habitación Ejecutiva (Suite Junior)</span>
+                <span class="rate-price">$170 / noche</span>
+              </div>
+              <div class="rate-item">
+                <span class="rate-room">Suite Presidencial WTC Club</span>
+                <span class="rate-price">$210 / noche</span>
+              </div>
+              <a href="mailto:reservas@hesperia-wtc.com?subject=Reserva%20Congreso%20Neurocirugia%202026" class="btn btn-primary" style="margin-top:15px; width: 100%;">Contactar Reservaciones</a>
+            </div>
+          </div>
+
+          <div class="hotel-gallery">
+            <div class="hotel-gallery-main" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800');">
+              <div class="hotel-image-overlay">Hesperia World Trade Center Valencia - Lobby Principal</div>
+            </div>
+            <div class="hotel-gallery-sub" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=500');">
+              <div class="hotel-image-overlay">Salón Principal de Conferencias</div>
+            </div>
+            <div class="hotel-gallery-sub" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=500');">
+              <div class="hotel-image-overlay">Habitación Deluxe (Tarifa Especial)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: PRECIOS Y REGISTRO -->
+    <div id="registration-section" class="page-section">
+      <div class="container">
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+          <div class="section-header">
+            <span class="section-tag">Inversión Académica</span>
+            <h2 class="section-title">Planes y Precios del Congreso</h2>
+            <p class="section-lead">Seleccione el pase académico que se ajuste a su perfil profesional. Ofrecemos opciones tanto presenciales como virtuales.</p>
+          </div>
+
+          <!-- Currency Toggler -->
+          <div class="currency-selector">
+            <span class="currency-label">Ver en Dólares ($)</span>
+            <label class="switch">
+              <input type="checkbox" id="currency-switch">
+              <span class="slider"></span>
+            </label>
+            <span class="currency-label">Ver en Bolívares (Bs.)</span>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- Price 1 -->
+            <div class="price-card">
+              <h3 class="price-name">Estudiantes</h3>
+              <div class="price-amount" id="price-estudiante">$40<span>/ USD</span></div>
+              <ul class="price-features">
+                <li>Acceso a auditorios de conferencias</li>
+                <li>Material digital de apoyo</li>
+                <li>Certificado digital digitalizado</li>
+                <li>Coffee breaks incluidos</li>
+              </ul>
+              <button class="btn btn-navy price-btn" onclick="document.getElementById('reg-category').value = 'estudiante'; document.getElementById('registration-form-section').scrollIntoView({behavior: 'smooth'})">Elegir Plan</button>
+            </div>
+
+            <!-- Price 2 -->
+            <div class="price-card">
+              <h3 class="price-name">Médicos Residentes</h3>
+              <div class="price-amount" id="price-residente">$80<span>/ USD</span></div>
+              <ul class="price-features">
+                <li>Acceso a todos los auditorios</li>
+                <li>Material digital de apoyo</li>
+                <li>Presentación de Trabajos Libres</li>
+                <li>Certificado avalado de asistencia</li>
+                <li>Coffee breaks incluidos</li>
+              </ul>
+              <button class="btn btn-navy price-btn" onclick="document.getElementById('reg-category').value = 'residente'; document.getElementById('registration-form-section').scrollIntoView({behavior: 'smooth'})">Elegir Plan</button>
+            </div>
+
+            <!-- Price 3 -->
+            <div class="price-card featured">
+              <h3 class="price-name">Médicos Especialistas</h3>
+              <div class="price-amount" id="price-especialista">$150<span>/ USD</span></div>
+              <ul class="price-features">
+                <li>Acceso completo preferencial</li>
+                <li>Bolso y material de bienvenida</li>
+                <li>Participación en simposios prácticos</li>
+                <li>Certificado oficial con carga de horas</li>
+                <li>Almuerzo y coffee breaks</li>
+              </ul>
+              <button class="btn btn-primary price-btn" onclick="document.getElementById('reg-category').value = 'especialista'; document.getElementById('registration-form-section').scrollIntoView({behavior: 'smooth'})">Elegir Plan</button>
+            </div>
+
+            <!-- Price 4 -->
+            <div class="price-card">
+              <h3 class="price-name">Asistencia Virtual</h3>
+              <div class="price-amount" id="price-virtual">$60<span>/ USD</span></div>
+              <ul class="price-features">
+                <li>Transmisión en vivo vía Streaming</li>
+                <li>Participación interactiva vía Chat</li>
+                <li>Acceso diferido a grabaciones</li>
+                <li>Certificado digital avalado</li>
+              </ul>
+              <button class="btn btn-navy price-btn" onclick="document.getElementById('reg-category').value = 'virtual'; document.getElementById('registration-form-section').scrollIntoView({behavior: 'smooth'})">Elegir Plan</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Form and Payment Info -->
+        <section id="registration-form-section" class="register-layout">
+          <div class="register-form-container">
+            <h3 style="font-size:24px; color:var(--color-navy-dark); margin-bottom:20px;">Formulario de Registro</h3>
+            
+            <!-- Success Screen Box (Shown via JS) -->
+            <div class="success-message" id="success-message-box">
+              <div style="font-size: 40px; margin-bottom: 12px;">✓</div>
+              <h4>¡Pre-registro Exitoso!</h4>
+              <p style="margin-bottom: 16px;">Hemos recibido sus datos y su referencia de pago correctamente.</p>
+              <div id="reg-summary-details" style="text-align: left; background: #fff; padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid #10b981; font-size: 13px; line-height: 1.6; margin-bottom: 20px;"></div>
+              <button class="btn btn-navy" id="register-another-btn">Registrar otro participante</button>
+            </div>
+
+            <div id="form-wrapper">
+              <form id="registration-form" class="register-form">
+                <div class="form-group">
+                  <label class="form-label" for="reg-name">Nombre Completo *</label>
+                  <input type="text" id="reg-name" required placeholder="Dr. / Dra. / Est. Nombre">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="reg-email">Correo Electrónico *</label>
+                  <input type="email" id="reg-email" required placeholder="nombre@correo.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="reg-phone">Teléfono de Contacto *</label>
+                  <input type="tel" id="reg-phone" required placeholder="+58 412-0000000">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="reg-institution">Institución / Hospital</label>
+                  <input type="text" id="reg-institution" placeholder="Hospital Clínico / UCV / Otro">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="reg-category">Categoría de Inscripción *</label>
+                  <select id="reg-category" required class="form-select">
+                    <option value="" disabled selected>Seleccione su categoría</option>
+                    <option value="especialista">Médico Especialista</option>
+                    <option value="residente">Médico Residente</option>
+                    <option value="estudiante">Estudiante de Medicina</option>
+                    <option value="virtual">Asistencia Virtual (Streaming)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="reg-ref">Referencia de Pago *</label>
+                  <input type="text" id="reg-ref" required placeholder="Número de confirmación o transferencia">
+                </div>
+                <div class="form-group form-group-full">
+                  <label class="form-label" for="reg-notes">Requerimientos Especiales / Comentarios</label>
+                  <textarea id="reg-notes" class="form-textarea" placeholder="Indique si tiene requerimientos dietéticos o médicos especiales, o si adjunta detalles adicionales del pago."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit-btn">Formalizar Registro</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="payment-info-container">
+            <h3>Información de Pago</h3>
+            <p style="margin-bottom: 24px; color: rgba(255,255,255,0.85); font-size:14px;">Realice el pago correspondiente al plan elegido y coloque el número de referencia en el formulario de la izquierda.</p>
+            
+            <div class="payment-method-box">
+              <div class="payment-method-title">
+                <span>🏦</span>
+                <span>Transferencia Bancaria Nacional</span>
+              </div>
+              <ul class="payment-details-list">
+                <li><strong>Banco:</strong> Banco Mercantil</li>
+                <li><strong>Cuenta Corriente:</strong> 0105-0000-00-0000000000</li>
+                <li><strong>Beneficiario:</strong> Soc. Venezolana de Neurocirugía</li>
+                <li><strong>RIF:</strong> J-00000000-0</li>
+              </ul>
+            </div>
+
+            <div class="payment-method-box">
+              <div class="payment-method-title">
+                <span>📱</span>
+                <span>Pago Móvil Interbancario</span>
+              </div>
+              <ul class="payment-details-list">
+                <li><strong>Banco:</strong> Banco Mercantil (0105)</li>
+                <li><strong>Teléfono:</strong> 0414-1234567</li>
+                <li><strong>Cédula / RIF:</strong> J-00000000-0</li>
+              </ul>
+            </div>
+
+            <div class="payment-method-box">
+              <div class="payment-method-title">
+                <span>💵</span>
+                <span>Zelle o Transferencia en USD</span>
+              </div>
+              <ul class="payment-details-list">
+                <li><strong>Correo de Pago:</strong> pagos@svneurocirugia.org</li>
+                <li><strong>Titular:</strong> Sociedad Venezolana de Neurocirugía</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <h4>XXII Congreso Venezolano de Neurocirugía</h4>
+        <p>Organizado por la Sociedad Venezolana de Neurocirugía. Buscando impulsar el desarrollo médico-científico del país a través de la excelencia docente y la innovación tecnológica.</p>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.5);">© 2026 Sociedad Venezolana de Neurocirugía. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-logos">
+        <h4>Instituciones Avalantes y Patrocinadores</h4>
+        <div class="footer-logos-flex">
+          <div class="sponsor-logo">SVNC</div>
+          <div class="sponsor-logo">Hesperia WTC</div>
+          <div class="sponsor-logo">MedSoma</div>
+          <div class="sponsor-logo">SomaClinic</div>
+          <div class="sponsor-logo">WTC Valencia</div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>Sede: Av. Salvador Feo La Cruz, Valencia 2001, Carabobo, Venezuela</div>
+      <div>Contacto: info@svneurocirugia.org | Telf: +58 241-1234567</div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Logic -->
+  <script src="./app.js"></script>
+</body>
+</html>
