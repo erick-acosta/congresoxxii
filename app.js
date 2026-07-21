@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initPrimaryNavigation();
   initScheduleTabs();
   initCurrencyToggle();
-  initRegistrationForm();
 });
 
 /**
@@ -107,76 +106,4 @@ function initCurrencyToggle() {
   });
 }
 
-/**
- * Registration Form & Verification Sim
- */
-function initRegistrationForm() {
-  const form = document.getElementById('registration-form');
-  const formContainer = document.getElementById('form-wrapper');
-  const successBox = document.getElementById('success-message-box');
-  const summarySpan = document.getElementById('reg-summary-details');
 
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Basic Validation
-    const name = document.getElementById('reg-name').value.trim();
-    const email = document.getElementById('reg-email').value.trim();
-    const phone = document.getElementById('reg-phone').value.trim();
-    const categorySelect = document.getElementById('reg-category');
-    const categoryText = categorySelect.options[categorySelect.selectedIndex].text;
-    const paymentRef = document.getElementById('reg-ref').value.trim();
-
-    if (!name || !email || !phone || !paymentRef) {
-      alert('Por favor, rellene todos los campos obligatorios.');
-      return;
-    }
-
-    // Simulate submission
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerText;
-    submitBtn.disabled = true;
-    submitBtn.innerText = 'PROCESANDO REGISTRO...';
-
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerText = originalText;
-
-      // Show success screen
-      form.reset();
-      formContainer.style.display = 'none';
-      successBox.style.display = 'block';
-      
-      // Update success metadata
-      const dateString = new Date().toLocaleDateString('es-VE', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-      });
-      summarySpan.innerHTML = `
-        <strong>Registrado a nombre de:</strong> ${name}<br>
-        <strong>Categoría:</strong> ${categoryText}<br>
-        <strong>Correo electrónico:</strong> ${email}<br>
-        <strong>Referencia de Pago:</strong> ${paymentRef}<br>
-        <strong>Fecha de Solicitud:</strong> ${dateString}<br>
-        <span style="display:inline-block; margin-top:12px; font-weight:700; color:#10b981;">Su cupo está pre-aprobado. En breve recibirá un correo de confirmación oficial.</span>
-      `;
-
-      // Scroll to form area smoothly
-      successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 1500);
-  });
-
-  // Handle "Registrar otra persona" button
-  const resetBtn = document.getElementById('register-another-btn');
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      successBox.style.display = 'none';
-      formContainer.style.display = 'block';
-    });
-  }
-}
